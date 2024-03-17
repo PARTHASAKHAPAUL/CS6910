@@ -1,12 +1,9 @@
 # CS6910
 DEEP_LEARNING:::
 
-Question:
-In this assignment I need to implement a feedforward neural network and write the backpropagation code for training the network the Fashion-MNIST dataset by using numpy for all matrix/vector operations,without any automatic differentiation packages. This network will be trained and tested using the Fashion-MNIST dataset. Specifically, given an input image (28 x 28 = 784 pixels) from the Fashion-MNIST dataset, the network will be trained to classify the image into 1 of 10 classes.
+To implement a feedforward neural network and write the backpropagation code for training the network the Fashion-MNIST dataset by using numpy for all matrix/vector operations,without any automatic differentiation packages. This network will be trained and tested using the Fashion-MNIST dataset. Specifically, given an input image (28 x 28 = 784 pixels) from the Fashion-MNIST dataset, the network will be trained to classify the image into 1 of 10 classes.
 
 
-
-Answer:
 I have taken:
 
 Final Training set: shape of (x_train) is (54000 x 784)  ;  shape of (y_train_encode), after one hot encoding, is (54000 x 10)
