@@ -1,6 +1,7 @@
 # CS6910
 :DEEP_LEARNING_ASSIGNMENT1:
 
+# Problem:
     To implement a feedforward neural network and write the backpropagation code for training the network the Fashion-MNIST dataset by using numpy for all matrix/vector operations,without any automatic differentiation packages.
 
 # Dataset: 
@@ -67,12 +68,25 @@
     Training the model:
     The train function to calling the six optimizers one by one and the training will be done by the selected optimizer.
 
-    Predicting the labels(For Confusion matrix):
+    Predicting the labels(For Plotting Confusion matrix):
     Creating the predict function to help to finding the predicted labels of x_test data for making the confusion matrix
 
+# Hyperparameters:
+    Using the sweep functionality provided by wandb to finding the best values for the hyperparameters listed below:
+
+    number of epochs: 5, 10
+    number of hidden layers: 3, 4, 5
+    size of every hidden layer: 32, 64, 128
+    weight decay (L2 regularisation): 0, 0.0005, 0.5
+    learning rate: 1e-3, 1 e-4
+    optimizer: sgd, momentum, nesterov, rmsprop, adam, nadam
+    batch size: 16, 32, 64
+    weight initialisation: random, Xavier
+    activation functions: sigmoid, tanh, ReLU
+    
 # For MNIST dataset:
-    Same thing that I have done for the fashion_mnist dataset, I have predicted for mnist dataset by the three best model that I have found by the fashion_mnist dataset.
-
-
-
-#  For Wandb Sweep : [link](https://docs.wandb.ai/guides)
+    I have predicted labels for x_test data of mnist dataset by the best three models that I have found by the fashion_mnist dataset.
+    
+# WANDB Report:
+    Have Sweeped with Sweep Count: 439 with Bayes method
+[Report](https://wandb.ai/parthasakhapaul/Deep_leraning_A1/reports/MA23M016-PARTHA-SAKHA-PAUL-CS6910-Assignment-1--Vmlldzo3MTgwMjIz)
