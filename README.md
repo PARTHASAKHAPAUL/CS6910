@@ -4,10 +4,40 @@
     To implement a feedforward neural network and write the backpropagation code for training the network the Fashion-MNIST dataset by using numpy for all matrix/vector operations,without any automatic differentiation packages.
 
 # Dataset: 
-    Fashion-MNIST, MNIST datasets
+[Fashion-MNIST](https://www.kaggle.com/datasets/zalando-research/fashionmnist) , [MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) datasets
 
 # Objective: 
     A Neural Network will be trained and tested using the Fashion-MNIST dataset. Specifically, given an input image (28 x 28 = 784 pixels) from the Fashion-MNIST dataset, the network will be trained to classify the image into 1 of 10 classes.
+
+# About Datasets: 
+    Fashion-MNIST is a dataset of images—consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes
+
+    Each image is 28 pixels in height and 28 pixels in width, for a total of 784 pixels
+
+    Each training and test example is assigned to one of the following labels:
+
+0: T-shirt/top
+
+1: Trouser
+
+2: Pullover
+
+3: Dress
+
+4: Coat
+
+5: Sandal
+
+6: Shirt
+
+7: Sneaker
+
+8: Bag
+
+9: Ankle boot
+
+    The MNIST database is, of same configuration as fashion_mnist, of handwritten digits.(0,1,2,3,4,5,6,7,8,9)
+
 
 # Data Preprocessing:
 
@@ -19,8 +49,8 @@
 
 # The code contains:
     Base Class:
-    Class NeuralNetwork which initializes the layer_sizes, activation_func, weight_init by constructor. 
-    This class has forward propagation method by feedforward function.
+    Class NeuralNetwork which initializes the layer sizes, activation function, weights by constructor. 
+    This class does forward propagation method by feedforward function.
 
 
     Inheritence Class:
@@ -29,19 +59,19 @@
 
     
     Optimizers:
-    SGD,MGD,NAG,RMSPROP,ADAM,NADAM by making different functions in the Class backward_optimizer. 
-
-And then I made:
-
-    the loss_accuracy function for finding the loss and accuracy after every epoch
+    Creating SGD,MGD,NAG,RMSPROP,ADAM,NADAM optimizers for training the weights and biases by making different functions in the Class backward_optimizer. 
     
-    the train function to calling the six optimizers one by one
-    
-    the predict function to help to finding the predicted labels of x_test data for making the confusion matrix
+    Finding Loss and Accuracy:
+    Defining the loss_accuracy function in the Class backward_optimizer for finding the loss and accuracy after every epoch.
 
-And for the last question 10: 
+    Training the model:
+    The train function to calling the six optimizers one by one and the training will be done by the selected optimizer.
 
-    same thing that I have done for the fashion_mnist dataset, I have predicted for mnist dataset by the three best model that I have found by the fashion_mnist dataset.
+    Predicting the labels(For Confusion matrix):
+    Creating the predict function to help to finding the predicted labels of x_test data for making the confusion matrix
+
+# For MNIST dataset:
+    Same thing that I have done for the fashion_mnist dataset, I have predicted for mnist dataset by the three best model that I have found by the fashion_mnist dataset.
 
 
 
